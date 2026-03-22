@@ -1,6 +1,8 @@
 #include QMK_KEYBOARD_H
 #include "midi.h"
 
+extern MidiDevice _midi_device;
+
 enum layer_names {
     _BASE = 0,
     _L1,
