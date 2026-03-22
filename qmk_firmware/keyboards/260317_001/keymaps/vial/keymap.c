@@ -19,11 +19,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_L1] = LAYOUT(
         MI_CH2, MI_CH3, MI_CH4, MI_CH5, MI_CH6, MI_CH7, MI_CH8, MI_CH11, MI_CH12, QK_BOOT, TG(_L1), TG(_L2),
-        KC_C0,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        MI_C4-,   MI_Cs,  MI_D,   MI_Ds,  MI_E,   MI_F,   MI_Fs,  MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B
+        KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        MI_C,   MI_Cs,  MI_D,   MI_Ds,  MI_E,   MI_F,   MI_Fs,  MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B
     ),
 
     [_L2] = LAYOUT(
