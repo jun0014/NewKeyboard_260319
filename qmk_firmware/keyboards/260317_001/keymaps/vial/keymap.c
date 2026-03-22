@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "midi.h"
 
 enum layer_names {
     _BASE = 0,
