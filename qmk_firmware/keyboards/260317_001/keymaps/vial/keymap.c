@@ -65,9 +65,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 static void send_midi_note(uint8_t note, bool pressed) {
     if (pressed) {
-        midi_send_noteon(&midi_device, midi_config.channel, note, midi_config.velocity);
+        midi_send_noteon(&_midi_device, midi_config.channel, note, midi_config.velocity);
     } else {
-        midi_send_noteoff(&midi_device, midi_config.channel, note, midi_config.velocity);
+        midi_send_noteoff(&_midi_device, midi_config.channel, note, midi_config.velocity);
     }
 }
 
