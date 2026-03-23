@@ -73,10 +73,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_L1] = LAYOUT(
         MI_CH2,  MI_CH3,  MI_CH4,  MI_CH5,  MI_CH6,  MI_CH7,  MI_CH8,  MI_CH11, MI_CH12, QK_BOOT, TG(_L1), TG(_L2),
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        MI_C,    MI_Cs,   MI_D,    MI_Ds,   MI_E,    MI_F,    MI_Fs,   MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,
         MIDI_36, MIDI_37, MIDI_38, MIDI_39, MIDI_40, MIDI_41, MIDI_42, MIDI_43, MIDI_44, MIDI_45, MIDI_46, MIDI_47,
         MIDI_24, MIDI_25, MIDI_26, MIDI_27, MIDI_28, MIDI_29, MIDI_30, MIDI_31, MIDI_32, MIDI_33, MIDI_34, MIDI_35,
+        MIDI_12, MIDI_13, MIDI_14, MIDI_15, MIDI_16, MIDI_17, MIDI_18, MIDI_19, MIDI_20, MIDI_21, MIDI_22, MIDI_23,
         MIDI_0,  MIDI_1,  MIDI_2,  MIDI_3,  MIDI_4,  MIDI_5,  MIDI_6,  MIDI_7,  MIDI_8,  MIDI_9,  MIDI_10, MIDI_11
     ),
 
