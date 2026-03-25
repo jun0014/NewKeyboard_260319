@@ -66,8 +66,8 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_BASE] = LAYOUT(
-        MI_CH2, MI_CH3, MI_CH4, MI_CH5, MI_CH6, MI_CH7, MI_CH8, MI_CH11, MI_CH12, QK_BOOT, L01_TOG, L23_TOG,
-        MI_C,   MI_Cs,  MI_D,   MI_Ds,  MI_E,   MI_F,   MI_Fs,  MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,
+        MI_CH2,  MI_CH3,  MI_CH4,  MI_CH5,  MI_CH6,  MI_CH7,  MI_CH8,  MI_CH11, MI_CH12, QK_BOOT, L01_TOG, L23_TOG,
+        MI_C,    MI_Cs,   MI_D,    MI_Ds,   MI_E,    MI_F,    MI_Fs,   MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,
         MIDI_36, MIDI_37, MIDI_38, MIDI_39, MIDI_40, MIDI_41, MIDI_42, MIDI_43, MIDI_44, MIDI_45, MIDI_46, MIDI_47,
         MIDI_24, MIDI_25, MIDI_26, MIDI_27, MIDI_28, MIDI_29, MIDI_30, MIDI_31, MIDI_32, MIDI_33, MIDI_34, MIDI_35,
         MIDI_12, MIDI_13, MIDI_14, MIDI_15, MIDI_16, MIDI_17, MIDI_18, MIDI_19, MIDI_20, MIDI_21, MIDI_22, MIDI_23,
@@ -75,8 +75,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_L1] = LAYOUT(
-        MI_CH2, MI_CH3, MI_CH4, MI_CH5, MI_CH6, MI_CH7, MI_CH8, MI_CH11, MI_CH12, QK_BOOT, L01_TOG, L23_TOG,
-        MI_C,   MI_Cs,  MI_D,   MI_Ds,  MI_E,   MI_F,   MI_Fs,  MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,
+        MI_CH2,  MI_CH3,  MI_CH4,  MI_CH5,  MI_CH6,  MI_CH7,  MI_CH8,  MI_CH11, MI_CH12, QK_BOOT, L01_TOG, L23_TOG,
+        MI_C,    MI_Cs,   MI_D,    MI_Ds,   MI_E,    MI_F,    MI_Fs,   MI_G,    MI_Gs,   MI_A,    MI_As,   MI_B,
         MIDI_36, MIDI_37, MIDI_38, MIDI_39, MIDI_40, MIDI_41, MIDI_42, MIDI_43, MIDI_44, MIDI_45, MIDI_46, MIDI_47,
         MIDI_24, MIDI_25, MIDI_26, MIDI_27, MIDI_28, MIDI_29, MIDI_30, MIDI_31, MIDI_32, MIDI_33, MIDI_34, MIDI_35,
         MIDI_12, MIDI_13, MIDI_14, MIDI_15, MIDI_16, MIDI_17, MIDI_18, MIDI_19, MIDI_20, MIDI_21, MIDI_22, MIDI_23,
@@ -111,7 +111,6 @@ static void send_midi_note(uint8_t note, bool pressed) {
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-
     switch (keycode) {
 
         case L01_TOG:
@@ -133,3 +132,152 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 }
             }
             return false;
+
+        case MIDI_0:
+            send_midi_note(0, record->event.pressed);
+            return false;
+        case MIDI_1:
+            send_midi_note(1, record->event.pressed);
+            return false;
+        case MIDI_2:
+            send_midi_note(2, record->event.pressed);
+            return false;
+        case MIDI_3:
+            send_midi_note(3, record->event.pressed);
+            return false;
+        case MIDI_4:
+            send_midi_note(4, record->event.pressed);
+            return false;
+        case MIDI_5:
+            send_midi_note(5, record->event.pressed);
+            return false;
+        case MIDI_6:
+            send_midi_note(6, record->event.pressed);
+            return false;
+        case MIDI_7:
+            send_midi_note(7, record->event.pressed);
+            return false;
+        case MIDI_8:
+            send_midi_note(8, record->event.pressed);
+            return false;
+        case MIDI_9:
+            send_midi_note(9, record->event.pressed);
+            return false;
+        case MIDI_10:
+            send_midi_note(10, record->event.pressed);
+            return false;
+        case MIDI_11:
+            send_midi_note(11, record->event.pressed);
+            return false;
+        case MIDI_12:
+            send_midi_note(12, record->event.pressed);
+            return false;
+        case MIDI_13:
+            send_midi_note(13, record->event.pressed);
+            return false;
+        case MIDI_14:
+            send_midi_note(14, record->event.pressed);
+            return false;
+        case MIDI_15:
+            send_midi_note(15, record->event.pressed);
+            return false;
+        case MIDI_16:
+            send_midi_note(16, record->event.pressed);
+            return false;
+        case MIDI_17:
+            send_midi_note(17, record->event.pressed);
+            return false;
+        case MIDI_18:
+            send_midi_note(18, record->event.pressed);
+            return false;
+        case MIDI_19:
+            send_midi_note(19, record->event.pressed);
+            return false;
+        case MIDI_20:
+            send_midi_note(20, record->event.pressed);
+            return false;
+        case MIDI_21:
+            send_midi_note(21, record->event.pressed);
+            return false;
+        case MIDI_22:
+            send_midi_note(22, record->event.pressed);
+            return false;
+        case MIDI_23:
+            send_midi_note(23, record->event.pressed);
+            return false;
+        case MIDI_24:
+            send_midi_note(24, record->event.pressed);
+            return false;
+        case MIDI_25:
+            send_midi_note(25, record->event.pressed);
+            return false;
+        case MIDI_26:
+            send_midi_note(26, record->event.pressed);
+            return false;
+        case MIDI_27:
+            send_midi_note(27, record->event.pressed);
+            return false;
+        case MIDI_28:
+            send_midi_note(28, record->event.pressed);
+            return false;
+        case MIDI_29:
+            send_midi_note(29, record->event.pressed);
+            return false;
+        case MIDI_30:
+            send_midi_note(30, record->event.pressed);
+            return false;
+        case MIDI_31:
+            send_midi_note(31, record->event.pressed);
+            return false;
+        case MIDI_32:
+            send_midi_note(32, record->event.pressed);
+            return false;
+        case MIDI_33:
+            send_midi_note(33, record->event.pressed);
+            return false;
+        case MIDI_34:
+            send_midi_note(34, record->event.pressed);
+            return false;
+        case MIDI_35:
+            send_midi_note(35, record->event.pressed);
+            return false;
+        case MIDI_36:
+            send_midi_note(36, record->event.pressed);
+            return false;
+        case MIDI_37:
+            send_midi_note(37, record->event.pressed);
+            return false;
+        case MIDI_38:
+            send_midi_note(38, record->event.pressed);
+            return false;
+        case MIDI_39:
+            send_midi_note(39, record->event.pressed);
+            return false;
+        case MIDI_40:
+            send_midi_note(40, record->event.pressed);
+            return false;
+        case MIDI_41:
+            send_midi_note(41, record->event.pressed);
+            return false;
+        case MIDI_42:
+            send_midi_note(42, record->event.pressed);
+            return false;
+        case MIDI_43:
+            send_midi_note(43, record->event.pressed);
+            return false;
+        case MIDI_44:
+            send_midi_note(44, record->event.pressed);
+            return false;
+        case MIDI_45:
+            send_midi_note(45, record->event.pressed);
+            return false;
+        case MIDI_46:
+            send_midi_note(46, record->event.pressed);
+            return false;
+        case MIDI_47:
+            send_midi_note(47, record->event.pressed);
+            return false;
+    }
+
+    return true;
+}
